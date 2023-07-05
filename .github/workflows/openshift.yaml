@@ -3,7 +3,7 @@ name: OpenShift
 env: 
   IMAGE_REGISTRY: ghcr.io/iyzyman
   REGISTRY_USER: iyzyman
-  REGISTRY_PASSWORD: ${{ github.token }}
+  REGISTRY_PASSWORD: ${{ secrets.CR_PAT }}
   APP_NAME: nationalparks
   IMAGE_TAGS: latest ${{ github.sha }}
 
