@@ -60,8 +60,8 @@ jobs:
     - name: Log in to OpenShift 
       uses: redhat-actions/oc-login@v1
       with:
-        openshift_server_url: ${{ env.OPENSHIFT_SERVER }}
-        openshift_token: ${{ env.OPENSHIFT_TOKEN }}
+        openshift_server_url: https://api.ff3e7fd63e.ccsd.ipz001.internal.bosch.cloud:6443
+        openshift_token: sha256~ObYni4UiACl2RXIA-RXvXc_rO48fxUBnq7xB7i7LBZg
         insecure_skip_tls_verify: true
         namespace: ${{ env.OPENSHIFT_NAMESPACE }}
 
