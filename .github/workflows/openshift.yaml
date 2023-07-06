@@ -62,7 +62,6 @@ jobs:
       with:
         openshift_server_url: https://api.ff3e7fd63e.ccsd.ipz001.internal.bosch.cloud:6443
         openshift_token: sha256~vhXyfjU1ouMTfkTpF8-QIo-XLkTWPOFmHX_guzaa2ug
-        insecure_skip_tls_verify: true
         namespace: ${{ env.OPENSHIFT_NAMESPACE }}
 
     # Run a script to create a new app or update the current one with the previously pushed container image
